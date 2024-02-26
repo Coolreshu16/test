@@ -26,6 +26,6 @@ jobs:
     # Organization name
           org_name: 'coolreshu16'
     # Repository name
-          repo_name: 'Coolreshu16/Vulnerable-app'
+          repo_name: 'Coolreshu16/test'
     # CSV File path
           csv_path: data/vulnerability.csv
