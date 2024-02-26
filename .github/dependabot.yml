@@ -14,17 +14,4 @@ updates:
     python-packages:
       patterns:
         - "*"
-      - name: Dependabot Alert Export
-  # You may pin to the exact commit or the version.
-  # uses: ambilykk/dependabot-alert-export@4d2c6759ed70553c5970b53497b55027cfd21558
-        uses: ambilykk/dependabot-alert-export@v1.0
-        with:
-    # GitHub token
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #'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'
-    # Organization name
-          org_name: 'coolreshu16'
-    # Repository name
-          repo_name: 'Coolreshu16/Vulnerable-app'
-    # CSV File path
-          csv_path: data/vulnerability.csv
+     
