@@ -1,3 +1,20 @@
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
+ 
+
+jobs:
+  bandit:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+
+    runs-on: ubuntu-latest
+    steps:
       - name: Dependabot Alert Export
   # You may pin to the exact commit or the version.
   # uses: ambilykk/dependabot-alert-export@4d2c6759ed70553c5970b53497b55027cfd21558
